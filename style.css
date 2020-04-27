@@ -1,0 +1,29 @@
+body {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .scene {
+    position: relative;
+    display: inline-block;
+    width: 640px;
+    height: 480px;
+    margin: 20px 0px 0px 20px;
+  }
+  
+  .scene svg {
+    width: 640px;
+    height: 480px;
+  }
+  
+  #layout {
+    width: 150px;
+  }
+  
+  #s1 {
+    background-color: lightblue;
+  }
+  
+  #s2 {
+    background-color: lightgray;
+  }
