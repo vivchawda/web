@@ -1,0 +1,56 @@
+    <!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <meta name="viewport" content="width=device-width">
+        <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+        <link rel="stylesheet" type="text/css" href="">
+        <style>
+            .page {position:absolute; top:0; width:100%; height:50%; color:rgba(0, 0, 0, 0); font: 70 50px 'Numans', sans-serif; text-align:center; text-decoration: none}
+            #item1 {left:0%}
+            #item2 {left:40%; top:140%}
+            #item3 {right:10%; top:245%}
+            #item4 {left:40%; top:370%}
+            #item5 {right:10%; top:475%}
+            #item6 {left:40%; top:600%}
+
+            html { 
+                background-image: url(me2.svg);
+                background-repeat: no-repeat;
+                background-position: center top;
+                background-size: cover;
+                }
+        </style>
+        <title>Vivek Chawda | Experience Designer</title>
+    </head>
+
+    <body>
+
+        
+
+        <a href="#item2" id="item1" class="page" style="font-size: 50px; line-height: 400px;">about</a>
+        <a href="#item3" id="item2" class="page" style="font-size: 100px; line-height: 847px;">2</a>
+        <a href="#item4" id="item3" class="page" style="font-size: 100px; line-height: 847px;">3</a>
+        <a href="#item5" id="item4" class="page" style="font-size: 100px; line-height: 847px;">4</a>
+        <a href="#item6" id="item5" class="page" style="font-size: 100px; line-height: 847px;">5</a>
+        <a href="#item1" id="item6" class="page" style="font-size: 100px; line-height: 847px;">6</a>
+
+
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
+        <script>
+            $('a').click(function(e){
+                $('html,body').scrollTo(this.hash, this.hash);
+                e.preventDefault();
+            });
+
+            // not really needed
+            $(window).resize(function(){
+                $('.page').css({
+                    fontSize: Math.max(Math.min($(window).outerWidth() / (1 * 6), parseFloat(Number.POSITIVE_INFINITY)), parseFloat(Number.NEGATIVE_INFINITY)) + 'px',
+                    lineHeight: $(window).height() + 'px'
+                });
+            }).resize();
+        </script>
+    
+</body></html>
