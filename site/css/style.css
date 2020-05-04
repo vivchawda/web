@@ -1,0 +1,9 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#home-butt {
+    position: fixed;
+    bottom: 10px;
+    /* [disabled]clip: rect(auto,10px,auto,auto); */
+    right: 10px;
+}
